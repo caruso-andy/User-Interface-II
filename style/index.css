@@ -1,9 +1,12 @@
-* {
+/*  {
     border: 1px solid grey;
-}
+}*/
 
 /*-------------------------------------------*/
 
+body {
+    background-color: rgb(131, 126, 121);
+}
 .title{
     display: flex;
     text-align: center;
@@ -12,3 +15,98 @@
     padding: 1px;
     background-color: tan;
 }
+nav {
+    display: flex;  
+    justify-content: space-between;
+    flex-direction: row;
+    height: 70px;
+}
+nav .myName{
+    font-size: 2rem;
+    width: 300px;
+    margin-top: 0;
+    margin-left: 10px;
+}
+.navLinks {
+    display: flex;
+    width: 15%;
+    text-align: center;
+    padding: 0 5px;
+}
+.navLinks .nav1{
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    align-items: center;
+    padding: 0 5px;
+    text-align: center;
+}
+.banner{
+    width: 80%;
+    height: 300px;
+    text-align: center;
+    margin: auto;
+    background-image: url("https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80");
+}
+.banner h1{
+    padding-top: 4%;
+    font-size: 3rem;
+}
+button {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 2px;
+}
+#myProjects {
+    background-color: tan;
+}
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    margin: 20px;
+    background-image: url("https://cdn.pixabay.com/photo/2014/09/23/08/57/ball-457334_960_720.jpg");
+  }
+  .container .tags {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: black;
+    height: 30px;
+    margin: 0 3%;
+    padding-bottom: 50px;
+  }
+  
+  .container div {
+      display: flex;
+      color: black;
+      width: 22%;
+      height: 200px;
+      margin: 0 3%;
+      font-family: "Lucida Console", Monaco, monospace;
+      font-size: 13px;
+
+  }
+  .container p {
+      width: 100%;
+      height: 100%;
+  }
+  #footer {
+      display: flex;
+      justify-content: center; 
+      margin-top: 10px;
+      padding-top: 12px;
+      width: 90%;
+      
+  }
+  #footer .footerContact {
+      display: flex;
+      text-align: center;
+      justify-content: center; 
+      height: 5%;
+      width: 10%;
+      margin-left: 10%;
+      background-color: tan;
+  }
