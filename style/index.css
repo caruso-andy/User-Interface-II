@@ -69,30 +69,17 @@ button {
     margin: 20px;
     background-image: url("https://cdn.pixabay.com/photo/2014/09/23/08/57/ball-457334_960_720.jpg");
   }
-  .container .tags {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    color: black;
-    height: 30px;
-    margin: 0 3%;
-    padding-bottom: 50px;
-  }
-  
-  .container div {
+  .container div{
       display: flex;
-      color: black;
-      width: 22%;
-      height: 200px;
-      margin: 0 3%;
-      font-family: "Lucida Console", Monaco, monospace;
-      font-size: 13px;
-
+      text-wrap: wrap;
+      justify-content: space-evenly;
+      width: 25%;
+      padding: 0 1%;
   }
-  .container p {
-      width: 100%;
-      height: 100%;
-  }
+  .one, .two, .three, .four, .five, .six {
+      display: flex;
+      flex-wrap: wrap;
+  }  
   #footer {
       display: flex;
       justify-content: center; 
@@ -109,4 +96,13 @@ button {
       width: 10%;
       margin-left: 10%;
       background-color: tan;
+  }
+  @media(max-width: 800px){
+      .container {
+          display: flex;
+          flex-wrap: wrap;
+      }
+      .container div {
+          width: 33%;
+      }
   }
